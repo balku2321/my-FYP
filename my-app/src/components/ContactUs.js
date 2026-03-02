@@ -22,7 +22,7 @@ const ContactUs = () => {
 
     try {
       // Ensure the API endpoint is correct
-      const response = await fetch('http://localhost:5000/api/contact-us', { // Updated URL
+      const response = await fetch('https://fypproject-pi.vercel.app/api/contact-us', { // Updated URL
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

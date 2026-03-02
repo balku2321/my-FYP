@@ -13,7 +13,7 @@ export const ProductProvider = ({ children }) => {
   const fetchProducts = async () => {
     try {
       const token = localStorage.getItem('token'); // Get the token from localStorage
-      const response = await fetch('http://localhost:5000/api/products', {
+      const response = await fetch('https://fypproject-pi.vercel.app/api/products', {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${token}`, // Include the token in the Authorization header

@@ -18,7 +18,7 @@ const ManageProducts = () => {
         {products.length > 0 ? (
           products.map(product => (
             <li key={product._id} className="product-item">
-              <img src={`http://localhost:5000${product.image}`} alt={product.name} className="product-image" />
+              <img src={`https://fypproject-pi.vercel.app${product.image}`} alt={product.name} className="product-image" />
               <h3>{product.name}</h3>
               <p>{product.description}</p>
               <p>

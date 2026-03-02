@@ -28,7 +28,7 @@ const FeaturedProducts = () => {
       <div className="products-list">
         {featuredProducts.map((product) => (
           <div className="product-card" key={product.id}>
-            <img src={`http://localhost:5000${product.image}`} alt={product.name} />
+            <img src={`https://fypproject-pi.vercel.app${product.image}`} alt={product.name} />
             <h3>{product.name}</h3>
            
 

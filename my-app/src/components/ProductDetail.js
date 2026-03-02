@@ -14,7 +14,7 @@ const ProductDetail = () => {
     const fetchProductDetails = async () => {
       try {
         const token = localStorage.getItem('token'); // Get the token from localStorage
-        const response = await fetch(`http://localhost:5000/api/products/${id}`, {
+        const response = await fetch(`https://fypproject-pi.vercel.app/api/products/${id}`, {
           method: 'GET',
           headers: {
             'Authorization': `Bearer ${token}`, // Include the token in the Authorization header
@@ -62,7 +62,7 @@ setProduct(productData);
   return (
     <div className="product-detail">
       <Link to="/products" className="back-to-products">Back to Products</Link>
-      <img src={`http://localhost:5000${product.image}`} alt={product.name} className="product-image" />
+      <img src={`https://fypproject-pi.vercel.app${product.image}`} alt={product.name} className="product-image" />
       <h1 className="product-name">{product.name}</h1>
       <p className="product-description">{product.description}</p>
       <p className="product-price">

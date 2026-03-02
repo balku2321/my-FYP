@@ -53,7 +53,7 @@ const Header = () => {
       const token = localStorage.getItem('token');
       if (token) {
         // Optional: Call logout API if necessary
-        const response = await fetch('http://localhost:5000/api/auth/logout', {
+        const response = await fetch('https://fypproject-pi.vercel.app/api/auth/logout', {
           method: 'POST',
           headers: {
             'Authorization': `Bearer ${token}`,

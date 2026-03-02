@@ -56,7 +56,7 @@ const Auth = () => {
         phone: role === 'farmer' ? phone : null,
       };
   
-      const response = await fetch('http://localhost:5000/api/auth/register', {
+      const response = await fetch('https://fypproject-pi.vercel.app/api/auth/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json', // Send data as JSON
@@ -80,7 +80,7 @@ const Auth = () => {
     e.preventDefault();
   
     try {
-      const response = await fetch('http://localhost:5000/api/auth/login', {
+      const response = await fetch('https://fypproject-pi.vercel.app/api/auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),
