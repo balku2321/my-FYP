@@ -20,7 +20,11 @@ const app = express();
 app.use('/uploads', express.static(path.join(__dirname, 'uploads'))); // Serve uploaded images
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: '*',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
