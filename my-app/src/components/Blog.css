@@ -1,0 +1,72 @@
+/* src/components/Blog.css */
+
+body {
+  background-color: #eaeaea; /* Light gray background for contrast */
+  font-family: 'Arial', sans-serif; /* Clean font */
+  margin: 0;
+  padding: 0;
+}
+
+/* Blog Container */
+.blog-container {
+  max-width: 900px; /* Wider container for better layout */
+  margin: 40px auto; /* Center the container */
+  padding: 20px;
+  background-color: #fff; /* White background for the blog */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Blog Title */
+.blog-container h2 {
+  text-align: center;
+  color: #2C3E50; /* Darker shade for title */
+  margin-bottom: 30px; /* More space below title */
+  font-size: 2rem; /* Larger font size */
+}
+
+/* Blog Post Styles */
+.blog-post {
+  margin-bottom: 20px; /* Space between blog posts */
+  padding: 15px;
+  border: 1px solid #e0e0e0; /* Light border for separation */
+  border-radius: 6px; /* Rounded corners */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth scaling and shadow effect */
+  background-color: #ffffff; /* White background for each post */
+}
+
+/* Hover Effect for Blog Posts */
+.blog-post:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+}
+
+/* Blog Post Title */
+.blog-post h3 {
+  font-size: 1.8rem; /* Slightly larger title */
+  color: #3498DB; /* Bright blue for titles */
+  margin: 10px 0; /* Space above and below the title */
+}
+
+/* Blog Thumbnail Image */
+.blog-thumbnail {
+  width: 100%; /* Full width for responsive images */
+  max-height: 300px; /* Limit height to make images smaller */
+  object-fit: cover; /* Ensure images cover their container */
+  border-radius: 6px; /* Rounded corners for images */
+  margin-bottom: 10px; /* Space below the image */
+}
+
+/* Blog Post Content */
+.blog-post p {
+  color: #555; /* Dark gray for post content */
+  line-height: 1.6; /* Improve readability */
+  font-size: 1rem; /* Standard font size */
+}
+
+/* No Posts Available Message */
+.blog-container p {
+  text-align: center; /* Centered message */
+  color: #888; /* Gray color for no posts message */
+  font-style: italic; /* Italic for emphasis */
+}

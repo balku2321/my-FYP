@@ -1,0 +1,62 @@
+/* src/components/AdminPanel.css */
+
+.admin-panel {
+  padding: 30px;
+  background-color: #f9f9f9; /* Light background for contrast */
+  border-radius: 10px; /* Slightly larger rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+  max-width: 800px; /* Set a max width for better layout on larger screens */
+  margin: 20px auto; /* Center the panel on the page with some margin */
+}
+
+.admin-panel h1 {
+  font-size: 2.5rem; /* Responsive font size */
+  margin-bottom: 25px; /* Increased margin for better spacing */
+  color: #333; /* Darker text for better readability */
+  text-align: center; /* Center the heading */
+  font-family: 'Arial', sans-serif; /* Clean and professional font */
+}
+
+.admin-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Increased gap for better spacing */
+}
+
+.admin-links a {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  padding: 14px 24px; /* Slightly larger padding for better touch targets */
+  text-decoration: none;
+  border-radius: 6px; /* More rounded corners for a modern look */
+  text-align: center;
+  font-weight: 600; /* Medium font weight for emphasis */
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s; /* Smooth transitions */
+  font-size: 1.1rem; /* Slightly larger font size for readability */
+}
+
+.admin-links a:hover {
+  background-color: #0056b3; /* Darker shade for hover */
+  transform: translateY(-3px); /* Slight lift effect on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.admin-links a:active {
+  transform: translateY(0); /* Reset on click */
+  box-shadow: none; /* Remove shadow on click */
+}
+
+@media (max-width: 768px) {
+  .admin-panel {
+    padding: 20px; /* Reduce padding on smaller screens */
+  }
+
+  .admin-panel h1 {
+    font-size: 2rem; /* Smaller font size for mobile */
+  }
+
+  .admin-links a {
+    font-size: 1rem; /* Smaller font size for links */
+    padding: 12px 20px; /* Adjust padding for smaller screens */
+  }
+}

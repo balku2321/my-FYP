@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "name": "Farmer John",
+      "imageUrl": "https://via.placeholder.com/150",
+      "location": "California, USA"
+    },
+    {
+      "id": 2,
+      "name": "Farmer Jane",
+      "imageUrl": "https://via.placeholder.com/150",
+      "location": "Texas, USA"
+    },
+    {
+      "id": 3,
+      "name": "Farmer Mike",
+      "imageUrl": "https://via.placeholder.com/150",
+      "location": "Florida, USA"
+    },
+    {
+      "id": 4,
+      "name": "Farmer Sue",
+      "imageUrl": "https://via.placeholder.com/150",
+      "location": "New York, USA"
+    }
+  ]
+  

@@ -1,0 +1,234 @@
+/* Admin Dashboard Styles */
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Main container */
+  .admin-dashboard {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Dashboard Header */
+  .dashboard-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .dashboard-header h1 {
+    font-size: 32px;
+    color: #4caf50;
+  }
+  
+  .summary {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 10px;
+    font-size: 16px;
+  }
+  
+  .summary div {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #4caf50;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .search-bar input:focus {
+    border-color: #2e7d32;
+  }
+  
+  /* Sort & Filter Controls */
+  .sort-filter {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .sort-filter button {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sort-filter button:hover {
+    background-color: #388e3c;
+  }
+  
+  /* Product Overview */
+  .product-overview {
+    margin-top: 20px;
+  }
+  
+  .product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .product-table th,
+  .product-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .product-table th {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .product-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .product-table button {
+    padding: 6px 12px;
+    font-size: 14px;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  .product-table button:hover {
+    background-color: #f57c00;
+  }
+  
+  /* Product Statistics */
+  .product-statistics {
+    margin-top: 40px;
+  }
+  
+  .product-statistics h2 {
+    font-size: 24px;
+    color: #4caf50;
+    margin-bottom: 15px;
+  }
+  
+  .product-statistics ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .product-statistics li {
+    font-size: 16px;
+    color: #333;
+    padding: 5px 0;
+  }
+  
+  /* Recent Products */
+  .recent-products {
+    margin-top: 40px;
+  }
+  
+  .recent-products h2 {
+    font-size: 24px;
+    color: #4caf50;
+    margin-bottom: 15px;
+  }
+  
+  .recent-products ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .recent-products li {
+    font-size: 16px;
+    color: #333;
+    padding: 5px 0;
+  }
+  
+  /* Product Activity Log */
+  .product-activity-log {
+    margin-top: 40px;
+  }
+  
+  .product-activity-log h2 {
+    font-size: 24px;
+    color: #4caf50;
+    margin-bottom: 15px;
+  }
+  
+  .product-activity-log ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .product-activity-log li {
+    font-size: 16px;
+    color: #333;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .dashboard-header h1 {
+      font-size: 24px;
+    }
+  
+    .summary {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .sort-filter {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .product-table th,
+    .product-table td {
+      font-size: 14px;
+    }
+  
+    .search-bar input {
+      max-width: 300px;
+    }
+  }
+  

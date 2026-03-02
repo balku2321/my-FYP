@@ -1,0 +1,15 @@
+[
+    {
+      "id": "1",
+      "proposedProduct": "Tomatoes",
+      "requestedProduct": "Potatoes",
+      "status": "pending"
+    },
+    {
+      "id": "2",
+      "proposedProduct": "Apples",
+      "requestedProduct": "Oranges",
+      "status": "accepted"
+    }
+  ]
+  

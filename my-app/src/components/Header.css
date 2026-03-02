@@ -1,0 +1,241 @@
+/* General reset and styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9fafb;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+/* Header Styling */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 25px; /* Even thinner padding */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #ffeb3b;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px); /* Adds slight blur effect for modern design */
+}
+
+/* Logo Styling */
+.header .logo {
+  font-size: 1.5rem; /* Reduced font size for logo */
+  font-weight: 800;
+  color: white;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.header .logo:hover {
+  transform: scale(1.1);
+  color: #ffeb3b;
+  text-shadow: 0px 0px 8px rgba(255, 235, 59, 0.8);
+}
+
+/* Menu Toggle */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.menu-toggle:hover {
+  color: #ffeb3b;
+  transform: rotate(90deg);
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Reduced gap to make it more compact */
+}
+
+.nav ul {
+  display: flex;
+  gap: 15px; /* Reduced gap between links */
+}
+
+.nav ul li {
+  list-style: none;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem; /* Reduced font size */
+  font-weight: 600;
+  padding: 6px 10px; /* Adjusted padding */
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.nav ul li a:hover {
+  background-color: #ffeb3b;
+  color: #4CAF50;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.nav ul li a.active {
+  color: #4CAF50;
+  border: 2px solid #4CAF50;
+}
+
+.nav ul li .auth-button,
+.nav ul li .logout-button {
+  padding: 6px 12px; /* Reduced padding */
+  border-radius: 25px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1rem; /* Reduced font size */
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav ul li .auth-button:hover,
+.nav ul li .logout-button:hover {
+  background-color: #ffeb3b;
+  color: #4CAF50;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  color: #333;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  width: 200px;
+  padding: 10px;
+  z-index: 1000;
+  transition: opacity 0.3s ease;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  opacity: 1;
+}
+
+.dropdown-content a {
+  color: #4CAF50;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  transform: translateX(5px);
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #ffffff;
+  padding: 8px 18px;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.search-bar input {
+  padding: 6px 12px;
+  border: none;
+  outline: none;
+  font-size: 0.9rem; /* Reduced font size */
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  background-color: #f1f1f1;
+}
+
+.search-bar input:focus {
+  border: 2px solid #4CAF50;
+  background-color: #ffffff;
+}
+
+.search-bar button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.search-bar button:hover {
+  background-color: #ffeb3b;
+  transform: scale(1.1);
+}
+
+/* Responsive Menu */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    gap: 12px; /* Reduced gap for mobile */
+    background-color: #4CAF50;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .search-bar {
+    display: none;
+  }
+
+  .nav ul li a {
+    font-size: 1.2rem; /* Increased font size for mobile */
+  }
+
+  .logo {
+    font-size: 1.6rem; /* Slightly smaller logo for mobile */
+  }
+}

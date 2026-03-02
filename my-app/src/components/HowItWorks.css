@@ -1,0 +1,60 @@
+/* src/components/HowItWorks.css */
+
+.how-it-works {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f4f4f4; /* Light gray background for contrast */
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+.how-it-works h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #4CAF50; /* Green color for the title */
+  font-weight: bold;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap; /* Ensure responsiveness */
+}
+
+.step {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-10px); /* Slight lift effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.step img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.step img:hover {
+  transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.step h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.step p {
+  font-size: 16px;
+  color: #666; /* Slightly lighter color for text */
+}

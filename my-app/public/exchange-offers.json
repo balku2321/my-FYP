@@ -1,0 +1,18 @@
+
+[
+    {
+      "id": "1",
+      "proposerId": "farmer1",
+      "proposedProduct": "Tomatoes",
+      "requestedProduct": "Potatoes",
+      "status": "pending"
+    },
+    {
+      "id": "2",
+      "proposerId": "farmer2",
+      "proposedProduct": "Apples",
+      "requestedProduct": "Oranges",
+      "status": "accepted"
+    }
+  ]
+  

@@ -1,0 +1,26 @@
+[
+    {
+      "id": "1",
+      "title": "Article 1",
+      "snippet": "This is a snippet for article 1.",
+      "image": "https://via.placeholder.com/150",
+      "content": "Full content for article 1.",
+      "author": "Author 1",
+      "comments": [
+        { "id": "1", "author": "Commenter 1", "text": "Great article!" },
+        { "id": "2", "author": "Commenter 2", "text": "Very informative." }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Article 2",
+      "snippet": "This is a snippet for article 2.",
+      "image": "https://via.placeholder.com/150",
+      "content": "Full content for article 2.",
+      "author": "Author 2",
+      "comments": [
+        { "id": "1", "author": "Commenter 1", "text": "Interesting read." }
+      ]
+    }
+  ]
+  

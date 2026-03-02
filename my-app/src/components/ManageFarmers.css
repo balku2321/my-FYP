@@ -1,0 +1,56 @@
+/* src/components/ManageFarmers.css */
+
+.manage-farmers {
+  padding: 30px;
+  background-color: #f9f9f9; /* Light background for contrast */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.manage-farmers h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333; /* Dark text for better readability */
+  text-align: center; /* Center the heading */
+}
+
+.manage-farmers ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+}
+
+.manage-farmers li {
+  display: flex; /* Flexbox for alignment */
+  justify-content: space-between; /* Space between name/location and button */
+  align-items: center; /* Align items vertically */
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #fff; /* White background for items */
+  border: 1px solid #e0e0e0; /* Light border for definition */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+  transition: box-shadow 0.2s; /* Smooth shadow transition */
+}
+
+.manage-farmers li:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Darker shadow on hover */
+}
+
+.manage-farmers button {
+  background-color: #dc3545; /* Bootstrap danger color for delete button */
+  color: white;
+  padding: 8px 12px; /* Comfortable padding */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.manage-farmers button:hover {
+  background-color: #c82333; /* Darker red for hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.manage-farmers button:active {
+  transform: translateY(0); /* Reset on click */
+}

@@ -1,0 +1,11 @@
+.exchange-status {
+    padding: 20px;
+  }
+  
+  .status-entry {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  

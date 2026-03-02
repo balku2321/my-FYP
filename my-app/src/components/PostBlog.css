@@ -1,0 +1,101 @@
+/* src/components/PostBlog.css */
+
+/* General Page Layout */
+body {
+    background-color: #f7f7f7; /* Light background for contrast */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main container for the new blog post form */
+.new-article-form {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.new-article-form h2 {
+    font-size: 2.2rem;
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+/* Form styling */
+.new-article-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Input fields */
+.new-article-form input[type="text"], 
+.new-article-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+/* Input field hover and focus states */
+.new-article-form input[type="text"]:focus, 
+.new-article-form textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Title input */
+.new-article-form input[type="text"] {
+    height: 50px;
+}
+
+/* Content textarea */
+.new-article-form textarea {
+    height: 150px;
+    resize: none;
+}
+
+/* Submit button */
+.new-article-form button {
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Submit button hover effect */
+.new-article-form button:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .new-article-form {
+        padding: 20px;
+    }
+
+    .new-article-form h2 {
+        font-size: 1.8rem;
+    }
+
+    .new-article-form input[type="text"], 
+    .new-article-form textarea {
+        font-size: 1rem;
+    }
+
+    .new-article-form button {
+        font-size: 1.1rem;
+    }
+}

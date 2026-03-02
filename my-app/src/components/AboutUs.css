@@ -1,0 +1,129 @@
+/* src/components/AboutUs.css */
+
+.about-us {
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+.hero-about {
+  background: linear-gradient(135deg, #6bc77c, #4CAF50);
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.hero-about h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.hero-about p {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.our-story, 
+.our-mission, 
+.our-team, 
+.our-values {
+  margin: 60px 0;
+  text-align: center;
+  background: #fff;
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.our-story h2, 
+.our-mission h2, 
+.our-team h2, 
+.our-values h2 {
+  font-size: 36px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  color: #333;
+}
+
+.our-story p, 
+.our-mission p {
+  font-size: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: #555;
+}
+
+.our-team .team-members {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  background: linear-gradient(135deg, #ffffff, #f7f7f7);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 280px;
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+}
+
+.team-member img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-member h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  font-weight: bold;
+  color: #333;
+}
+
+.team-member p {
+  font-size: 18px;
+  color: #777;
+}
+
+.our-values ul {
+  list-style: none;
+  padding: 0;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 1.8;
+}
+
+.our-values ul li {
+  font-size: 20px;
+  margin-bottom: 18px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.our-values ul li::before {
+  content: '✔️';
+  position: absolute;
+  left: 0;
+  color: #4CAF50;
+  font-size: 22px;
+}
+
+.our-values ul li strong {
+  color: #4CAF50;
+  font-weight: bold;
+}

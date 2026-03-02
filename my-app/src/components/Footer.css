@@ -1,0 +1,98 @@
+/* src/components/Footer.css */
+
+.footer {
+  padding: 40px 20px;
+  background-color: #282c34;
+  color: #fff;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  border-top: 3px solid #4CAF50; /* Accent border at the top */
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 30px;
+  flex-wrap: wrap; /* Ensure responsiveness */
+}
+
+.link-section {
+  max-width: 200px;
+}
+
+.link-section h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #4CAF50; /* Green color for section titles */
+  border-bottom: 2px solid #4CAF50; /* Underline effect */
+  padding-bottom: 10px;
+}
+
+.link-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link-section ul li {
+  margin-bottom: 10px;
+}
+
+.link-section ul li a {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.link-section ul li a:hover {
+  color: #fff;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  text-decoration: underline;
+}
+
+.social-media {
+  margin-bottom: 30px;
+}
+
+.social-media a {
+  margin: 0 15px;
+  display: inline-block;
+}
+
+.social-media img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease;
+}
+
+.social-media img:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.footer p {
+  font-size: 16px;
+  margin-top: 20px;
+  color: #bbb; /* Slightly lighter color for the footer text */
+}
+
+/* Added styles for a visual flair */
+.footer::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1); /* Light overlay effect */
+}
+
+.footer a {
+  font-weight: bold; /* Make links bold for emphasis */
+}
+
+.footer a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
