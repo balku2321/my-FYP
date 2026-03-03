@@ -44,7 +44,7 @@ const Products = () => {
             <div key={product._id} className="product-card">
               <Link to={`/products/${product._id}`} className="product-link">
                 <img
-                  src={`https://fypproject-pi.vercel.app${product.image}`}
+                  src={product.image}
                   alt={product.name}
                 />
                 <h3>{product.name}</h3>

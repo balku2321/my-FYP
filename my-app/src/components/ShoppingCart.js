@@ -16,7 +16,7 @@ const ShoppingCart = () => {
           <ul>
             {cartItems.map(item => (
               <li key={item.id} className="cart-item">
-                 <img src={`https://fypproject-pi.vercel.app${item.image}`} alt={item.name} />
+                 <img src={item.image} alt={item.name} />
                 
                 <div className="item-details">
                   <h2>{item.name}</h2>

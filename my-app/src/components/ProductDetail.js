@@ -62,7 +62,7 @@ setProduct(productData);
   return (
     <div className="product-detail">
       <Link to="/products" className="back-to-products">Back to Products</Link>
-      <img src={`https://fypproject-pi.vercel.app${product.image}`} alt={product.name} className="product-image" />
+      <img src={product.image} alt={product.name} className="product-image" />
       <h1 className="product-name">{product.name}</h1>
       <p className="product-description">{product.description}</p>
       <p className="product-price">
