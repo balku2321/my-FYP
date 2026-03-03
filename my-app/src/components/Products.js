@@ -15,17 +15,14 @@ const Products = () => {
   const query = searchParams.get('query') || '';
   const locationQuery = searchParams.get('location') || '';
 
-  useEffect(() => {
-    if (products.length > 0) {
-      // Filter products based on the search query and location
-      const filtered = products.filter(
-        (product) =>
-          product.name.toLowerCase().includes(query.toLowerCase()) &&
-          product.location.toLowerCase().includes(locationQuery.toLowerCase())
-      );
-      setFilteredProducts(filtered);
-    }
-  }, [query, locationQuery, products]);
+ useEffect(() => {
+  const filtered = products.filter(
+    (product) =>
+      product.name.toLowerCase().includes(query.toLowerCase()) &&
+      product.location.toLowerCase().includes(locationQuery.toLowerCase())
+  );
+  setFilteredProducts(filtered);
+}, [query, locationQuery, products]);
 
   return (
     <div className="products-page">
@@ -44,7 +41,7 @@ const Products = () => {
             <div key={product._id} className="product-card">
               <Link to={`/products/${product._id}`} className="product-link">
                 <img
-                  src={product.image}
+                  src={`https://fypproject-pi.vercel.app${product.image}`}
                   alt={product.name}
                 />
                 <h3>{product.name}</h3>
