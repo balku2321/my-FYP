@@ -3,19 +3,26 @@ const router = express.Router();
 const productController = require('../controllers/productController');
 const { authenticateJWT } = require('../middleware/auth');
 const multer = require('multer');
-const path = require('path'); // Import the path module
+const cloudinary = require('cloudinary').v2;
+const { CloudinaryStorage } = require('multer-storage-cloudinary');
 
-// Set up multer for handling image uploads
-const storage = multer.diskStorage({
-  destination: (req, file, cb) => {
-    cb(null, 'uploads/'); // Folder where images will be stored
-  },
-  filename: (req, file, cb) => {  
-    cb(null, Date.now() + path.extname(file.originalname)); // Rename the image file to avoid conflicts
+// Configure Cloudinary
+cloudinary.config({
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET,
+});
+
+// Set up Cloudinary storage for multer
+const storage = new CloudinaryStorage({
+  cloudinary,
+  params: {
+    folder: 'products',
+    allowed_formats: ['jpg', 'png', 'jpeg'],
   },
 });
 
-const upload = multer({ storage: storage });
+const upload = multer({ storage });
 
 // Route to create a product (with file upload)
 router.post('/', authenticateJWT, upload.single('image'), productController.createProduct);
