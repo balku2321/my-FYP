@@ -50,7 +50,7 @@ exports.createProduct = async (req, res) => {
       tags,
     } = req.body;
 
-    const imageUrl = req.file ? `/uploads/${req.file.filename}` : null;
+  const imageUrl = req.file ? req.file.path : null;
 
     if (!name || !description || !price || !quantity || !category) {
       return res.status(400).json({ message: 'All required fields must be provided' });
